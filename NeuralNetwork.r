@@ -28,7 +28,7 @@ predicted_strength <- model_results$net.result
 # examine the correlation between predicted and actual values
 cor(predicted_strength, concrete_test$strength)
 ## Improving model performance ----
-# a more complex neural network topology with 5 hidden neurons
+# a more complex neural network topology with 4,2,4 hidden neurons
 concrete_model2 <- neuralnet(strength ~ .,data = concrete_train,
                              hidden =c(4,2,4))
 # plot the network
